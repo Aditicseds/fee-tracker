@@ -1,0 +1,267 @@
+/* Root Container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  background-color: #03060461; /* Dark background for the entire app */
+  color: #f5f5f5; /* Light text for contrast */
+  transition: all 0.3s ease-in-out;
+  animation: fadeIn 1.5s ease-out;
+  position: relative;
+}
+
+
+/* Fade-in animation for the entire page */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.list{
+  color:rgb(226, 97, 252);
+  font-size: 3rem;
+}
+.mainhead{
+ 
+    color: #f4ff7d; /* Golden color for the magical feel */
+    margin-bottom: 20px;
+    font-size: 3rem;
+    text-shadow: 0px 0px 0px #ffe8a4, 0px 0px 7px #f7f72c; /* Stronger magical glow */
+    border-bottom: 2px solid #28261e;
+    padding-bottom: 10px;
+    position: relative;
+    
+   /* animation: danceText 1.5s ease-in-out infinite alternate; /* Dancing animation*/
+ 
+}
+/* Headings Styling */
+h1, h2, h3 {
+  color: #dc7bff; /* Golden color for the magical feel */
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  text-shadow: 0px 0px 0px #0f0d10, 0px 0px 0px #24231f; /* Stronger magical glow */
+  /* border-bottom: 2px solid #f5d442; */
+  padding-bottom: 10px;
+  position: relative;
+  /*animation: danceText 1.5s ease-in-out infinite alternate; /* Dancing animation */
+}
+
+/* Dancing text animation */
+@keyframes danceText {
+  0% { transform: scale(1); letter-spacing: 0px; }
+  100% { transform: scale(1.05); letter-spacing: 1.6px; }
+}
+
+/* Card or Form Container */
+/*.card {
+  background-color: #1c1c1c; /* Dark background for cards */
+  /* padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(255, 255, 255, 0.2); /* Lighter magical glow */
+  /*transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+} */
+
+/* Hover effect on cards */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 25px rgba(255, 255, 255, 0.3); /* More intense glow on hover */
+}
+body{
+  background: #000;
+}
+/* Magical Stars Background */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('download.jpg');
+  background-size: cover;
+  opacity: 0.3; /* Slightly increased opacity for a stronger effect */
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Dynamic Gradient Background */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(45deg, rgba(31, 0, 40, 0.9), rgba(2, 25, 44, 0.7), rgba(0, 0, 0, 0.8)); */
+  background-size: 400% 400%;
+  animation: magicGradient 12s ease-in-out infinite; /* Slower gradient transition */
+  z-index: -2;
+}
+
+/* Gradient animation */
+@keyframes magicGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Button Styling */
+button {
+  background-color: #8e44ad; /* Dark purple for magical feel */
+  color: #ecf0f1;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0px 0px 10px rgba(142, 68, 173, 0.7), 0px 0px 20px rgba(142, 68, 173, 0.9); /* Strong magical glow */
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #6a1b9a;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(142, 68, 173, 1), 0px 0px 30px rgba(142, 68, 173, 1); /* Intense glow */
+}
+
+/* Input Fields */
+input, select {
+  background-color: #111112;
+  color: #f5f5f5;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+
+
+/* Input focus effect */
+input:focus, select:focus {
+  border-color: #b24af7;
+  box-shadow: 0 0 8px rgba(231, 75, 255, 0.3);
+  outline: none;
+}
+
+/* Dashboard Section */
+.dashboard {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #3d303061;
+  border-radius: 10px;
+  border: 1px solid #d556f8;
+  animation: slideInUp 0.8s ease-out;
+  position: relative;
+  z-index: 0;
+  box-shadow: 0 0 15px rgba(243, 81, 255, 0.4); /* Strong magical glow */
+  overflow: hidden;
+
+}
+
+.dash{
+  display: flex;
+  justify-content: space-evenly;
+}
+.dashhead{
+  text-align: center;
+  font-size: 1.9rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgb(255, 66, 255);
+}
+/* Slide-in animation for dashboard */
+@keyframes slideInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Student List Table Styles */
+.student-list {
+  margin-top: 20px;
+  background-color: #31133552; /* Dark background for the table container */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2); /* Magical glow */
+}
+
+.student-list h2 {
+  color: #b228d2; /* Golden color for magical heading */
+  text-align: center;
+  text-shadow: 0px 0px 10px #1b1b17, 0px 0px 20px #121210;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #f5f5f5; /* Light text color for contrast */
+  font-size: 1rem;
+}
+
+thead th {
+  background-color: #b228d2; /* Dark purple for header */
+  color: #fff;
+  padding: 12px;
+  text-align: left;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px #6a1b9a;
+  border-bottom: 2px solid #ce50ff; /* Golden underline for table headers */
+}
+
+tbody td {
+  background-color: #333; /* Dark background for table rows */
+  padding: 12px;
+  border-bottom: 1px solid #6a1b9a;
+  text-shadow: 0px 0px 3px #3b3838;
+}
+
+tbody tr:hover {
+  background-color: #444; /* Slightly lighter row on hover */
+}
+
+td button {
+  background-color: #8e44ad; /* Dark purple for magical button */
+  color: #fff;
+  padding: 8px 15px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(142, 68, 173, 0.7), 0 0 20px rgba(142, 68, 173, 0.9); /* Magical glow */
+}
+
+td button:hover {
+  background-color: #6a1b9a;
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px rgba(142, 68, 173, 1), 0px 0px 30px rgba(142, 68, 173, 1);
+}
+
+/* Responsive table for smaller screens */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.9rem;
+  }
+
+  thead th, tbody td {
+    padding: 10px;
+  }
+
+  td button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}
