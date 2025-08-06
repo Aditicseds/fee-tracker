@@ -1,5 +1,5 @@
 login id :-
 ```bash
-password is : password123
+password  : password123
 username : admin
 ```
